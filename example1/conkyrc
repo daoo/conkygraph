@@ -1,0 +1,21 @@
+alignment top_right
+background yes
+border_width 0
+double_buffer yes
+draw_borders no
+gap_x 10
+gap_y 10
+own_window_hints undecorated,below,sticky,skip_taskbar
+own_window_transparent yes
+own_window_type override
+own_window yes
+update_interval 1
+use_spacer none
+minimum_size 1260 1004
+
+# Lua
+lua_load /stuff/programming/misc/conky/conkygraph/conkygraph.lua
+lua_startup_hook load_graphs ./graphs.json
+lua_draw_hook_pre draw_graphs
+
+TEXT

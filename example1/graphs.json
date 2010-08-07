@@ -1,0 +1,162 @@
+{
+  "cpu": {
+    "name":               "cpu usage",
+    "outline":            true,
+    "outline_color":      "ffffff",
+    "outline_antialias":  false,
+    "outline_alpha":      1,
+    "outline_width":      1,
+    "x":                  0,
+    "y":                  0,
+    "width":              0,
+    "height":             328,
+    "functions": {
+      "cpu0": {
+        "name":           "cpu0",
+        "conky_variable": "${cpu cpu1}",
+        "dx":             1,
+        "record_max":     false,
+        "max_value":      100,
+        "antialias":      true,
+        "stroke_color":   "73d216",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      },
+      "cpu1": {
+        "name":           "cpu1",
+        "conky_variable": "${cpu cpu2}",
+        "dx":             1,
+        "record_max":     false,
+        "max_value":      100,
+        "antialias":      true,
+        "stroke_color":   "3465a4",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      },
+      "cpu2": {
+        "name":           "cpu2",
+        "conky_variable": "${cpu cpu3}",
+        "dx":             1,
+        "record_max":     false,
+        "max_value":      100,
+        "antialias":      true,
+        "stroke_color":   "cc0000",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      },
+      "cpu3": {
+        "name":           "cpu3",
+        "conky_variable": "${cpu cpu4}",
+        "dx":             1,
+        "record_max":     false,
+        "max_value":      100,
+        "antialias":      true,
+        "stroke_color":   "f57900",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      }
+    }
+  },
+  "ram_swap": {
+    "name":               "ram and swap",
+    "outline":            true,
+    "outline_color":      "ffffff",
+    "outline_antialias":  false,
+    "outline_alpha":      1,
+    "outline_width":      1,
+    "x":                  0,
+    "y":                  338,
+    "width":              0,
+    "height":             328,
+    "functions": {
+      "ram": {
+        "name":           "ram",
+        "conky_variable": "${memperc}",
+        "dx":             1,
+        "record_max":     false,
+        "max_value":      100,
+        "antialias":      true,
+        "stroke_color":   "73d216",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      },
+      "swap": {
+        "name":           "swap",
+        "conky_variable": "${swapperc}",
+        "dx":             1,
+        "record_max":     false,
+        "max_value":      100,
+        "antialias":      true,
+        "stroke_color":   "cc0000",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      }
+    }
+  },
+  "link_up_down": {
+    "name":               "link quality, up and down",
+    "outline":            true,
+    "outline_color":      "ffffff",
+    "outline_antialias":  false,
+    "outline_alpha":      1,
+    "outline_width":      1,
+    "x":                  0,
+    "y":                  676,
+    "width":              0,
+    "height":             328,
+    "functions": {
+      "link": {
+        "name":           "link",
+        "conky_variable": "${wireless_link_qual wlan0}",
+        "dx":             1,
+        "record_max":     false,
+        "max_value":      70,
+        "max_parse":      "${wireless_link_qual_max wlan0}",
+        "antialias":      true,
+        "stroke_color":   "3465a4",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      },
+      "down": {
+        "name":           "down",
+        "conky_variable": "${to_bytes ${downspeedf wlan0}}",
+        "dx":             1,
+        "record_max":     true,
+        "max_value":      0,
+        "antialias":      true,
+        "stroke_color":   "75507b",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      },
+      "up": {
+        "name":           "up",
+        "conky_variable": "${to_bytes ${upspeedf wlan0}}",
+        "dx":             1,
+        "record_max":     true,
+        "max_value":      0,
+        "antialias":      true,
+        "stroke_color":   "f57900",
+        "stroke_width":   2,
+        "fill":           false,
+        "fill_color":     null,
+        "fill_alpha":     null
+      }
+    }
+  }
+}

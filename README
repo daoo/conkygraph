@@ -1,0 +1,15 @@
+conkygraph is a lua script for drawing graphs in conky using cairo.
+
+REQUIREMENTS:
+  * conky
+  * lua
+  * lua-cairo
+  * lua-json
+  * lua-lfs (lua-filesystem)
+
+USAGE:
+1. Create a (or use a existing) file containing data about the graphs in json format.
+2. Add the following to your conkyrc:
+   lua_load /path/to/conkygraph.lua
+   lua_startup_hook load_graphs /path/to/graphs_data.json
+   lua_draw_hook_pre draw_graphs
